@@ -1,0 +1,31 @@
+<div class="personal">
+    <button color="primary" mat-button routerLink='/home'>Back</button>
+    <div class="h-line">
+        Personl Info
+    </div>
+    <div *ngIf='userData.length>0'>
+        <div *ngFor='let user of userData'>
+            <div>
+                ID: {{user.id}}
+            </div>
+            <div>
+                Name :{{user.name}}
+            </div>
+            <div>
+                Email : {{user.email}}
+            </div>
+            <div>
+                position : {{user.position}}
+            </div>
+            <div>
+                username : {{user.position}}
+            </div>
+            <div>
+                profile Image : {{user.profile_image}}
+            </div>
+            <div>
+                full username : {{user.full_username}}
+            </div>
+        </div>
+    </div>
+</div>
